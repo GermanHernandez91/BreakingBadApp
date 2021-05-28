@@ -7,13 +7,17 @@ import javax.inject.Inject
 
 class RemoteDataSource @Inject constructor(
     private val breakingBadApi: BreakingBadApi
-) {
+) : RemoteRepo {
 
-    suspend fun getCharacters(): Response<Characters> {
+    override suspend fun getCharacters(): Response<Characters> {
         return breakingBadApi.getCharacters()
     }
 
-    suspend fun getCharacterById(id: Int): Response<Characters> {
+    override suspend fun getCharacterById(id: Int): Response<Characters> {
         return breakingBadApi.getCharacterById(id)
+    }
+
+    override suspend fun searchCharacterByName(name: String): Response<Characters> {
+        return breakingBadApi.searchCharacterByName(name)
     }
 }
