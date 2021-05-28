@@ -1,6 +1,7 @@
 package com.example.breakingbadapp.data
 
 import com.example.breakingbadapp.data.network.BreakingBadApi
+import com.example.breakingbadapp.data.network.RemoteRepo
 import com.example.breakingbadapp.models.Characters
 import retrofit2.Response
 import javax.inject.Inject

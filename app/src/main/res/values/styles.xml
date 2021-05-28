@@ -4,7 +4,6 @@
         <item name="background">@color/actionBarBackgroundColor</item>
     </style>
 
-    <!-- Card View Styles -->
     <style name="RowCardViewStyle">
         <item name="cardCornerRadius">10dp</item>
         <item name="strokeColor">@color/strokeColor</item>
@@ -16,6 +15,23 @@
         <item name="maxLines">2</item>
         <item name="android:textColor">@color/titleColor</item>
         <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="CharacterTitle">
+        <item name="android:textSize">@dimen/title_size</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+    <style name="CharacterNickname">
+        <item name="android:textColor">@color/darker</item>
+        <item name="android:textSize">@dimen/subtitle_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="OccupationLabel">
+        <item name="android:textSize">@dimen/subtitle_size</item>
         <item name="android:textStyle">bold</item>
     </style>
 </resources>

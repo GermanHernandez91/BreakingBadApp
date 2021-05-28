@@ -11,7 +11,7 @@ import com.example.breakingbadapp.utils.ListDiffUtil
 
 class CharactersAdapter : RecyclerView.Adapter<CharactersAdapter.CharactersViewHolder>() {
 
-    private var characters = arrayListOf<Character>()
+    private var characters = emptyList<Character>()
 
     class CharactersViewHolder(
         private val binding: CharacterRowLayoutBinding

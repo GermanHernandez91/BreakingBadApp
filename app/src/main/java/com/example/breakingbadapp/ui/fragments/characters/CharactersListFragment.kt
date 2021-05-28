@@ -55,8 +55,10 @@ class CharactersListFragment : Fragment(), SearchView.OnQueryTextListener {
     }
 
     private fun setupRecyclerView() {
-        binding?.charactersRecyclerView?.adapter = mAdapter
-        binding?.charactersRecyclerView?.layoutManager = LinearLayoutManager(requireContext())
+        binding?.charactersRecyclerView?.apply {
+            adapter = mAdapter
+            layoutManager = LinearLayoutManager(requireContext())
+        }
         showShimmerEffect()
     }
 

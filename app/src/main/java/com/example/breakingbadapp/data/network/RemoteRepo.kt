@@ -1,4 +1,4 @@
-package com.example.breakingbadapp.data
+package com.example.breakingbadapp.data.network
 
 import com.example.breakingbadapp.models.Characters
 import retrofit2.Response
